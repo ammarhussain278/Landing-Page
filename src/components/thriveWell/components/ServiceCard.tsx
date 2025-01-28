@@ -1,20 +1,11 @@
 import React from "react";
 import { ServiceCardProps } from "../types";
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({
-  icon,
-  title,
-  description,
-}) => {
+export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     <div className="flex flex-col grow text-base max-md:mt-4">
       <div className="flex flex-col px-8 py-8 rounded-2xl bg-sky-200 bg-opacity-20 max-md:pl-5">
-        <img
-          loading="lazy"
-          src={icon}
-          alt=""
-          className="object-contain aspect-square w-[50px] max-md:ml-1"
-        />
+        <img loading="lazy" src={icon} alt={`${title} icon`} className="object-contain aspect-square w-[50px] max-md:ml-1" />
         <div className="self-start mt-3.5 text-2xl font-bold tracking-wide leading-none text-center text-sky-950">
           {title}
         </div>
