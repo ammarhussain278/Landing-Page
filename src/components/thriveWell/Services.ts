@@ -1,19 +1,34 @@
-import { ServiceCardProps } from "./types";
+import { ServiceCardProps } from './types';
 
-export const serviceData = [
+export const serviceData: ServiceCardProps[] = [
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/dc9a63690801f5850ffca0d73a4fbb3098cd3469047c8dac3549fd7e3c7bf526?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
+    icon: "/icons/therapy.svg",
     title: "Therapy Sessions",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc."
+    description: "Professional one-on-one therapy sessions tailored to your needs with licensed therapists."
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/ed0241bfa601f2f489bf6c40c679c1be50f9e0ebe5ff4f83b29640c5a3e48e8f?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
+    icon: "/icons/counseling.svg",
     title: "Personal Counseling",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc."
+    description: "Personalized counseling services to help you navigate life's challenges and achieve personal growth."
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/69180438d975b328ef1bb2ead668072fc2ceef043bb50b38438cae8f03331b4a?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
+    icon: "/icons/group.svg",
     title: "Group Therapy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc."
+    description: "Supportive group sessions where you can connect with others facing similar challenges."
+  },
+  {
+    icon: "/icons/self-help.svg",
+    title: "Self-Help Tools",
+    description: "Access to comprehensive self-help resources and tools for managing mental wellness."
+  },
+  {
+    icon: "/icons/workshop.svg",
+    title: "Online Workshops",
+    description: "Interactive online workshops covering various mental health topics and coping strategies."
+  },
+  {
+    icon: "/icons/support.svg",
+    title: "24/7 Support",
+    description: "Round-the-clock access to mental health support and crisis intervention services."
   }
 ];
