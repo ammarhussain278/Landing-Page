@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
             <div className="pb-2 w-12">Home</div>
           </button>
           <button className="flex flex-col justify-center self-stretch p-2.5 my-auto w-[86px]">
-            <div className="py-0.5 w-full max-md:pr-0">About Us</div>
+            <div className="py-0.5 w-full max-md:pr-0 ">About Us</div>
           </button>
           <button className="flex flex-col justify-center self-stretch p-2.5 my-auto whitespace-nowrap w-[86px]">
             <div className="py-0.5 w-full">Services</div>
