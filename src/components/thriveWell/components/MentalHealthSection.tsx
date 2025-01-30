@@ -12,7 +12,7 @@ export const MentalHealthSection: React.FC<MentalHealthSectionProps> = ({
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[58%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col w-full font-bold max-md:mt-10 max-md:max-w-full">
-            <h2 className="text-4xl max-md:max-w-full">{title}</h2>
+            <h2 className="self-center text-4xl font-bold text-center w-[537px] max-md:max-w-full bg-gradient-to-r from-[#063248] to-[#298EA6] text-transparent bg-clip-text ">{title}</h2>
             <p className="mt-20 text-lg tracking-normal leading-8 text-black max-md:mt-10 max-md:max-w-full">
               {content}
             </p>

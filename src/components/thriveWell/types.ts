@@ -12,7 +12,7 @@ export interface ServiceCardProps {
 }
 
 export interface ServicesSectionProps {
-  title: string;
+  title: React.ReactNode; // Allows both string and JSX elements
   subtitle: string;
   services: ServiceCardProps[];
 }

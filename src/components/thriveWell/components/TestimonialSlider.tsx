@@ -4,13 +4,28 @@ import { TestimonialProps, TestimonialSliderProps } from '../types';
 export const TestimonialSlider: React.FC<TestimonialSliderProps> = ({ testimonials }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const itemsPerSlide = 3;
+  const [itemsPerSlide, setItemsPerSlide] = useState(3);
+
   const totalSlides = Math.ceil(testimonials.length / itemsPerSlide);
 
   const getSlideItems = useCallback((slideIndex: number): TestimonialProps[] => {
     const startIndex = slideIndex * itemsPerSlide;
     return testimonials.slice(startIndex, startIndex + itemsPerSlide);
-  }, [testimonials]);
+  }, [testimonials, itemsPerSlide]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setItemsPerSlide(1);
+      } else {
+        setItemsPerSlide(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;

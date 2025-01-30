@@ -1,9 +1,9 @@
 import React from 'react';
 import { ServiceCardProps } from '../types';
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
+export const ServiceCard: React.FC<ServiceCardProps & { className?: string }> = ({ icon, title, description, className }) => {
   return (
-    <div className="flex flex-col p-8 rounded-2xl bg-sky-200 bg-opacity-20 transition-all duration-300 hover:shadow-lg">
+    <div className={`flex flex-col p-8 rounded-2xl bg-sky-200 bg-opacity-20 transition-all duration-300 hover:shadow-lg ${className}`}>
       <img
         src={icon}
         alt=""
@@ -16,12 +16,6 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, descripti
       <p className="mt-3.5 leading-7 text-slate-600">
         {description}
       </p>
-      <button 
-        className="self-end mt-10 font-semibold tracking-normal text-black hover:text-sky-700 transition-colors duration-200"
-        aria-label={`Learn more about ${title}`}
-      >
-        Learn More
-      </button>
     </div>
   );
 };

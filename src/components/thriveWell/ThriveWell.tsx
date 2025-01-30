@@ -37,7 +37,7 @@ export const ThriveWell: React.FC = () => {
           
           <div className="flex flex-col ml-5 w-[61%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col w-full max-md:mt-2.5 max-md:max-w-full">
-              <h2 className="self-center text-4xl font-bold text-center w-[537px] max-md:max-w-full">
+              <h2 className="self-center text-4xl font-bold text-center w-[537px] max-md:max-w-full bg-gradient-to-r from-[#063248] to-[#298EA6] text-transparent bg-clip-text">
                 Enhancing Lives through Mental Health Support
               </h2>
               <div className="mt-40 max-md:mt-10 max-md:max-w-full">
@@ -73,24 +73,33 @@ export const ThriveWell: React.FC = () => {
       <MentalHealthSection {...mentalHealthData} />
 
       <section className="mt-40 w-full max-w-[1076px] max-md:mt-10 max-md:max-w-full mx-auto">
-        <div className="flex gap-5 max-md:flex-col">
-        <ServicesSection
-        title="Support Tailored for You"
-        subtitle="Expert mental health services designed to meet your unique needs and help you thrive."
-        services={serviceData}
-      />
-        </div>
-      </section>
+  <div className="flex gap-5 max-md:flex-col">
+    <ServicesSection
+      title={
+        <span className="self-center text-4xl font-bold text-center w-[537px] max-md:max-w-full bg-gradient-to-r from-[#063248] to-[#298EA6] text-transparent bg-clip-text">
+          Support Tailored for You
+        </span>
+      }
+      subtitle="Expert mental health services designed to meet your unique needs and help you thrive."
+      services={serviceData}
+    />
+  </div>
+</section>
 
-    <section className="mt-40 max-w-[1400px] mx-auto px-4 max-md:mt-10">
-      <h2 className="text-4xl font-bold text-center mb-16 max-w-[748px] mx-auto">
+
+    <section className="mt-40 max-w-[1400px] mx-auto px-4 max-md:mt-10 max-md:px-2">
+      <h2 className="text-4xl font-bold text-center mb-16 max-w-[748px] mx-auto bg-gradient-to-r from-[#063248] to-[#298EA6] text-transparent bg-clip-text max-md:text-2xl max-md:mb-8 max-md:max-w-full break-words">
         Love From Patients Who Treated By ThriveWell Best Services
       </h2>
-      <TestimonialSlider testimonials={testimonialData} />
+      <div className="max-md:px-2">
+        <TestimonialSlider testimonials={testimonialData} />
+      </div>
     </section>
 
       <section className="mt-56 w-full max-w-[1078px] max-md:mt-10 max-md:max-w-full mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10">Read Our Latest Articles</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-[#063248] to-[#298EA6] text-transparent bg-clip-text">
+  Read Our Latest Articles
+</h2>
         {articles.map((article, index) => (
           <div key={index} className="mb-10">
             <ArticleCard {...article} />

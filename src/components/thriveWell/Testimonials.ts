@@ -26,13 +26,13 @@ export const testimonialData: TestimonialProps[] = [
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ca046a62429c37a5d23bb1958ac42ad182f0ee37fd489e5948612e413e1fc012?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
+    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/b57c5f09b5a651373d64aa8830863566e7dc2a9f5f8853d7ddbefdfaf240b144?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
     name: "Hamdan",
     date: "01 March, 2022",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ca046a62429c37a5d23bb1958ac42ad182f0ee37fd489e5948612e413e1fc012?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
+    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/b57c5f09b5a651373d64aa8830863566e7dc2a9f5f8853d7ddbefdfaf240b144?placeholderIfAbsent=true&apiKey=a6a95620f5d9488a9a237a326a1aaba3",
     name: "Sadaf",
     date: "01 March, 2022",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
